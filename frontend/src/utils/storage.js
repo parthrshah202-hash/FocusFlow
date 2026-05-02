@@ -46,3 +46,11 @@ export const getEnergy = () => {
 export const setEnergy = (energy) => {
     localStorage.setItem("ff_energy", JSON.stringify(energy));
 };
+
+export const clearAll = () => {
+    localStorage.removeItem('ff_tasks');
+    localStorage.removeItem('ff_plan');
+    localStorage.removeItem('ff_active_task_id');
+    localStorage.removeItem('ff_session_log');
+    localStorage.removeItem('ff_energy');
+};
