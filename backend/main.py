@@ -7,8 +7,8 @@ app = FastAPI(title="FocusFlow API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173", # Keeps your local dev working
-        "*" # Temporarily allows Vercel (or any frontend) to connect
+        "http://localhost:5173", 
+        "https://focus-flow-jade-ten.vercel.app" 
     ],
     allow_credentials=True,
     allow_methods=["*"],
