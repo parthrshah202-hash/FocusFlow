@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://focusflow-125r.onrender.com";
 
 export const generatePlan = async (tasks, energyLevel, availableMinutes) => {
     const response = await axios.post(`${BASE_URL}/api/plan`, {
